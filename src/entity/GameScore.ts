@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 
 @Entity()
-export class User {
+export class GameScore {
 
     @PrimaryGeneratedColumn()
     id: number;
@@ -10,12 +10,8 @@ export class User {
     Name: string;
 
     @Column()
-    Password: string;
-    @Column()
-    Salt: string;
+    Score: number;
 
-    @Column({ type: 'json', nullable: true })
-    tokens: string;
 
 
 }
