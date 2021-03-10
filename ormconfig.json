@@ -1,0 +1,24 @@
+{
+   "type": "mysql",
+   "host": "34.80.93.194",
+   "port": 3306,
+   "username": "DoogLink",
+   "password": "Doogdoog77+",
+   "database": "DoogRun",
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "src/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
